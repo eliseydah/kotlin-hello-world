@@ -1,3 +1,10 @@
 fun main() {
-    println("Hello, Kotlin!")
+    println("Введите свой возраст:")
+    val ageInput = readln()
+    val age = ageInput.toIntOrNull()
+    if (age != null) {
+        println("через год вам будет ${age + 1}")
+    } else {
+        println("Пожалуйста, введите корректное число.")
+    }
 }
